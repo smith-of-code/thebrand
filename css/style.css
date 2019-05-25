@@ -635,7 +635,7 @@ summary {
   font-weight: 300;
   line-height: 24px; }
 
-.feedback {
+.footer__feedback {
   margin-top: 97px;
   background: url("../img/feedback-bk.jpg") no-repeat center, #f2f2f2;
   background-size: cover; }
@@ -652,51 +652,50 @@ summary {
   border-right: 1px solid #ffffff;
   width: 569px; }
 
-.feedback-slider {
+.feedback-comment {
   padding-top: 111px; }
 
-.feedback-slider__content {
+.feedback-comment__client {
   display: flex; }
 
-.feedback-slider__image {
-  width: 83px;
+.client-comment__image {
   height: 83px;
   border-radius: 50%; }
 
-.feedback-slider__text {
+.client-comment__text {
   padding: 0 72px 0 28px; }
 
-.feedback-slider__text-main {
+.client-comment__text-main {
   color: #222224;
   font-size: 16px;
   font-style: italic;
   line-height: 26px;
   letter-spacing: 0.4px; }
 
-.feedback-slider__text-name-top {
+.client-comment__text-name {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.4px;
   line-height: 26px; }
 
-.feedback-slider__text-name-bottom {
+.client-comment__text-city {
   color: #222224;
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0.3px;
   line-height: 14px; }
 
-.feedback-slider__nav {
+.client-comment__nav {
   margin: 41px 0 0 115px;
   width: 140px;
   display: flex;
   justify-content: space-around; }
 
-.feedback-slider__nav-item {
+.client-comment__nav-item {
   width: 38px;
   border-bottom: 4px solid #d6d6d6;
   transition: all 0.3s; }
-  .feedback-slider__nav-item:hover {
+  .client-comment__nav-item:hover {
     border-bottom: 4px solid #f16d7f;
     cursor: pointer; }
 
@@ -780,18 +779,12 @@ summary {
   padding: 0;
   margin-bottom: 0; }
 
-.footer-menu-item {
-  margin-bottom: 30px; }
-
-.footer-menu-item:last-of-type {
-  margin-bottom: 0; }
-
 .footer-menu-item-link {
   color: #898989;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.4px;
-  line-height: 16px;
+  line-height: 41px;
   transition: all 0.3s; }
   .footer-menu-item-link:hover {
     color: #f16d7f; }
