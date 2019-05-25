@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900')
+
+$color-pink: #f16d7f
+$container-width: 1140px
+
+
+//страница каталога
+
+.breadcrumb
+  background-color: #f8f3f4
+
+.breadcrumb-flex
+  height: 148px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.breadcrumb__page-name
+  color: #f16d7f
+  font-size: 24px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+
+.breadcrumb__nav
+  display: flex
+
+.breadcrumb__nav-link
+  color: #636363
+  font-size: 14px
+  font-weight: 300
+  line-height: 20px
+  text-transform: uppercase
+  transition: all 0.3s
+  &:hover
+    color: $color-pink
+
+.breadcrumb__nav-link:after
+  content: '/'
+  margin-right: 4px
+  margin-left: 4px
+
+.breadcrumb__nav-active:after
+  content: ''
+
+.breadcrumb__nav-active
+  color: $color-pink
+  font-weight: 700
+
+.catalog
+  margin-top: 60px
+
+.catalog-flex
+  display: flex
+
+.left-sidebar-box
+  width: 243px
+  margin-bottom: 18px
+  margin-right: 50px
+  display: flex
+  flex-direction: column
+.left-sidebar-box:last-of-type
+  margin-bottom: 0
+
+.product-category-menu-marker::-webkit-details-marker
+  display: none
+
+.product-category-menu-marker::after
+  content: '\25B6'
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 19.99px
+  text-transform: uppercase
+
+.left-sidebar-box[open] .product-category-menu-marker::after
+  content: '\25BC'
+  color: $color-pink
+
+.product-category-menu-marker
+  display: flex
+  justify-content: space-between
+  padding: 16px 11px
+  border-left: 5px solid $color-pink
+  border-bottom: 1px solid #ebebeb
+  outline: none
+
+.product-category-menu-name
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+
+.left-sidebar-box[open] .product-category-menu-name
+  color: $color-pink
+
+.sidebar-link
+  display: block
+  padding-left: 22px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 33px
+  transition: all 0.3s
+  &:hover
+    color: $color-pink
+
+.product__filter
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+.product__filter-title
+  padding: 0
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  line-height: 30px
+  text-transform: uppercase
+
+
+.product__filter-box
+  border: none
+
+.product__filter-trending
+  width: 178px
+
+.trending__nav
+  margin: 0
+  padding: 0
+  display: flex
+  flex-wrap: wrap
+
+.trending__item:after
+  content: '|'
+  margin: 0 10px
+  color: #dfdfdf
+.trending__item:nth-of-type(3n):after
+  content: ''
+  margin: 0
+
+.trending__item-link
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  transition: all 0.3s
+  &:hover
+    color: $color-pink
+
+
+.product__filter-size
+  justify-content: center
+  width: 230px
+
+//checkbox-castom
+.checkbox-item
+  margin-right: 20px
+  cursor: pointer
+
+.checkbox-item:nth-of-type(4n)
+  margin-right: 0
+.checkbox
+  display: none
+
+.checkbox-castom
+  display: inline-block
+  vertical-align: middle
+  margin-right: 2px
+  width: 13px
+  height: 13px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  position: relative
+  &::after
+    content: ""
+    display: block
+    left: 0
+    top: -5px
+    position: absolute
+    font-size: 18px
+    color: $color-pink
+
+
+.checkbox:checked + .checkbox-castom::after
+  content: '\2714'
+
+.checkbox-text
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+//end checkbox-castom
+
+.product__filter-price
+  width: 262px
+//range-castom
+.price-range
+  -webkit-appearance: none
+  width: 100%
+  border-radius: 3px
+  height: 10px
+  outline: none
+  background: -webkit-linear-gradient(left ,$color-pink 0%,$color-pink 52%,#f0f0f0 52%, #f0f0f0 100%)
+
+.price-range::-webkit-slider-thumb
+  -webkit-appearance: none
+  width: 14px
+  height: 14px
+  background: $color-pink
+  border-radius: 50%
+  cursor: pointer
+
+.range-out
+  display: flex
+  justify-content: space-between
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+
+//sort
+
+.product-sort
+  width: 100%
+  display: flex
+  justify-content: flex-start
+  background-color: #f3f3f3
+  margin: 42px 0 48px 0
+
+.product-sort-item
+  display: flex
+  margin: 10px 5px
+
+.product-sort-item-text
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  padding: 2px 13px
+
+.product-sort-item-text-select
+  border: none
+  background: none
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  padding-right: 20px
+  &:focus
+    outline: none
+    color: $color-pink
+//end sort
+
+.pagination
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+.pagination-left
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  color: #aaaaaa
+  font-size: 20px
+  font-weight: bold
+  padding: 0 15px
+
+.pagination-list
+  display: flex
+  margin: 0
+  padding: 0
+
+.pagination-item
+  margin: 0 7px
+
+.pagination-item:nth-of-type(8n-1)
+  margin: 0 -7px
+
+.pagination-link
+  color: #c4c4c4
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
+  &:hover
+    color: $color-pink
+
+.pagination-link-active
+  color: $color-pink
+
+.button-white
+  background-color: transparent
+  padding: 15px 45px
+  color: $color-pink
+  font-size: 15px
+  font-weight: 400
+  line-height: 15px
+  border: 1px solid $color-pink
+  text-align: center
+  transition: all 0.3s
+  &:hover
+    background-color: $color-pink
+    color: #ffffff
+    cursor: pointer
+
+.featured-product
+  height: 341px
+  background-color: #222224
+  margin-top: 110px
+.featured-product__flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 98px 0 114px 0
+.product-box
+  width: 309px
+  background-position: center 0
+  text-align: center
+  padding: 64px 0
+
+//конец страницы каталога

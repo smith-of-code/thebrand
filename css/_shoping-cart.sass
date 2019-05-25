@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900')
+
+$color-pink: #f16d7f
+$container-width: 1140px
+
+.cart
+  margin-top: 90px
+
+.cart__grow-box
+  display: flex
+  align-items: center
+  border-bottom: 1px solid #eaeaea
+  padding-bottom: 20px
+  margin-bottom: 22px
+  text-align: center
+
+.cart__grow-col
+  flex-grow: 1
+  flex-basis: 160px
+  color: #656565
+  font-size: 13px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+
+.cart__grow-col:first-child
+  text-align: left
+  flex-basis: 390px
+
+.cart__grow-col-first
+  display: flex
+  flex-basis: 0
+
+.cart__grow-col-head
+  color: #222222
+  font-size: 13px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+  text-align: center
+.cart__grow-image
+  margin-right: 20px
+.cart__grow-description
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 22px 0 13px 0
+
+
+.cart__grow-description-title
+  color: #222222
+  font-size: 13px
+  font-weight: 700
+  text-transform: uppercase
+  &:hover
+    color: $color-pink
+
+.cart__grow-description-param
+  font-size: 13px
+  font-weight: 400
+  line-height: 20px
+  color: #575757
+  text-transform: none
+  &-span
+    font-weight: 300
+    color: #6f6e6e
+
+.cart__grow-col-number
+  width: 54px
+  height: 30px
+  color: #656565
+  font-size: 13px
+  font-weight: 400
+  line-height: 13px
+  text-align: center
+
+.cart__grow-col-del
+  color: #c0c0c0
+  font-size: 16px
+  &:hover
+    color: $color-pink
+    cursor: pointer
+
+.cart__buttons
+  display: flex
+  justify-content: space-between
+
+.cart__form
+  display: flex
+  margin-top: 63px
+
+.cart__form-col
+  display: flex
+  flex-direction: column
+  width: $container-width / 3
+
+
+.cart__form-legend
+  color: #222222
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+.cart__form-input
+  width: 100%
+  padding: 16px 18px
+  margin-top: 20px
+  box-sizing: border-box
+  color: #b1b1b1
+  font-size: 13px
+  font-weight: 300
+
+.cart__form-descr
+  color: #000000
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+
+.cart__form-button
+  margin-top: 23px
+  display: table
+
+.cart__form-subtotal
+  color: #4a4a4a
+  font-size: 11px
+  font-weight: 400
+  text-transform: uppercase
+  text-align: right
+  &-span
+    margin-left: 18px
+.cart__form-grandtotal
+  color: #222222
+  font-size: 16px
+  line-height: 40px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: right
+  border-bottom: 1px solid #e2e2e2
+  &-span
+    margin-left: 18px
+
+.cart__total
+  padding: 42px
+  background-color: #f5f3f3
+
+.cart__form-button-pink
+  margin-top: 17px
+  text-transform: uppercase
+  text-align: center
+
+

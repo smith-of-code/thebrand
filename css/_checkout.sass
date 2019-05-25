@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900')
+
+$color-pink: #f16d7f
+$container-width: 1140px
+.checkout
+  margin: 56px 0
+
+.checkout-details
+  border-bottom: 1px solid #e8e8e8
+.checkout-summary
+  color: #222222
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  margin: 33px 0
+
+.summary_span
+  margin-right: 10px
+
+.checkout-summary::-webkit-details-marker
+  display: none
+
+.flex
+  display: flex
+  margin: 35px
+
+.checkout-summary__content
+  margin-bottom: 20px
+
+.content-title
+  margin: 0
+  color: #222222
+  font-size: 13px
+  font-weight: 600
+  line-height: 23px
+  text-transform: uppercase
+
+.content-description
+  color: #b3b2b2
+  font-size: 13px
+  font-weight: 400
+  line-height: 23px
+.content-description-link
+  display: block
+  &:hover
+    color: $color-pink
+
+.register_form
+  display: flex
+  flex-direction: column
+
+.register_label
+  color: #222222
+  font-size: 12px
+  line-height: 25px
+  font-weight: 700
+  text-transform: uppercase
+  cursor: pointer
+  margin-top: 10px
+
+.radio_label
+  margin: 0 0 20px 0
+.register_radio
+  display: none
+
+
+.radio-custom
+  width: 10px
+  height: 10px
+  border: 2px solid #555555
+  border-radius: 3px
+  position: relative
+  margin-right: 14px
+
+
+.radio-custom,
+.register_label
+  display: inline-block
+  vertical-align: middle
+
+
+.register_radio:checked + .radio-custom::before
+  content: ""
+  display: block
+  position: absolute
+  top: 2px
+  right: 2px
+  bottom: 2px
+  left: 2px
+  background: #413548
+  border-radius: 2px
+
+.radio-custom,
+.register_radio:checked + .radio-custom::before
+  border-radius: 50%
+
+.login_form
+  display: flex
+  flex-direction: column
+  margin-left: 290px
+
+.register_label-sup
+  color: #ff0d0d
+  font-size: 17px
+  font-weight: 400
+  top: 2px
+  left: 2px
+
+.input
+  width: 390px
+  padding: 16px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+
+.checkout_button
+  width: 180px
+  text-align: center
+  display: inline-block
+.forgotpass
+  color: #222222
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+  margin-left: 32px
+  &:hover
+    color: $color-pink
+.red
+  color: #ff0d0d

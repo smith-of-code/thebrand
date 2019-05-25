@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900')
+
+$color-pink: #f16d7f
+$container-width: 1140px
+
+
+//страница товара
+.slider
+  height: 777px
+  background: #f7f7f7
+  border: 1px solid #eaeaea
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.slider-nav-item
+  padding: 16px
+  background-color: #d8d8d8
+  color: #ffffff
+  font-size: 24px
+  font-weight: 400
+  line-height: 24px
+  border: 1px solid transparent
+  &:hover
+    background-color: $color-pink
+
+
+//description
+.description__flex
+  position: relative
+  z-index: 1
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-top: -92px
+  padding: 50px 0 50px 0
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+
+.description__header
+  text-align: center
+
+.description__header-link
+  color: #f16d7f
+  font-size: 14px
+  font-weight: 700
+  line-height: 14px
+  text-transform: uppercase
+  border-bottom: 3px solid $color-pink
+  padding-bottom: 14px
+
+.description__header-title
+  color: #4d4d4d
+  font-size: 18px
+  font-weight: 400
+  line-height: 80px
+  text-transform: uppercase
+
+
+.description__content-text
+  width: 640px
+  text-align: center
+  color: #5e5e5e
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+
+.description__content-chrs
+  display: flex
+  justify-content: space-around
+  color: #b9b9b9
+  font-size: 14px
+  font-weight: 700
+  line-height: 57px
+  text-transform: uppercase
+
+.description__content-chrs-span
+  color: #2f2f2f
+
+.description__content-price
+  text-align: center
+  color: #ef5b70
+  font-size: 24px
+  font-weight: 700
+  line-height: 24px
+  padding-bottom: 43px
+  border-bottom: 1px solid #eaeaea
+
+
+.description-form
+  margin-top: 63px
+  width: 537px
+.description-form-flex
+  display: flex
+  justify-content: space-between
+
+.description-form-item
+  width: 144px
+  display: flex
+  flex-direction: column
+
+.description-form__label
+  color: #2f2f2f
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  margin-bottom: 16px
+
+
+.description-form__select
+  padding: 13px
+  color: #bcbcbc
+  font-size: 13px
+  font-weight: 400
+  border: 1px solid #eaeaea
+
+.description-form__number
+  padding: 13px
+  color: #bcbcbc
+  font-size: 13px
+  line-height: 18px
+  font-weight: 400
+  border: 1px solid #eaeaea
+
+.description-form__button
+  margin-top: 28px
+  padding: 23px
+  color: #ef5b70
+  font-size: 16px
+  font-weight: 700
+  background: url("../img/cart-pink.svg") no-repeat 190px
+  &:hover
+    background: url("../img/cart-white.svg") no-repeat 190px, $color-pink
+
+//enddescription
+
+
+
+.product-title-single-page
+  color: #4d4d4d
+  font-size: 24px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase

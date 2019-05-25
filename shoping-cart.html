@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shoping-cart</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__flex">
+        <div class="header__left">
+            <a class="logo" href="index.html"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span
+                    class="logo-d pink">D</span></a>
+            <form class="header__form" action="#">
+                <div class="browse">
+                    <p class="browse__text">Browse<i class="browse__sort fa fa-caret-down" aria-hidden="true"></i></p>
+                    <div class="drop drop-browse">
+                        <div class="drop-box-triangle triangle-browse"></div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Blazers</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Denim</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Leggings/Pants</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Skirts/Shorts</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <input class="header__form-input" type="text" placeholder="Search for Item...">
+                <div class="header__form-search"><i class="fa fa-search" aria-hidden="true"></i></div>
+            </form>
+        </div>
+        <div class="header__right">
+            <div class="header__right-cart"><a href="shoping-cart.html"><img src="img/cart.svg" alt="cart"></a>
+                <div class="ellipse-cart">10</div>
+                <div class="drop drop-cart">
+                    <div class="drop-box-triangle triangle-cart"></div>
+                    <div class="drop-box">
+                        <div class="drop-cart__item">
+                            <a href="single-product.html" class="drop-cart__item-image"><img src="img/cart-item1.jpg"
+                                                                                             alt="cart-item1"></a>
+                            <div class="drop-cart__item-description">
+                                <h3 class="drop-cart__item-title">rebox zane</h3>
+                                <p class="drop-cart__item-star"><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                                                     aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o"
+                                                                                     aria-hidden="true"></i></p>
+                                <p class="drop-cart__item-price">1 <span class="drop-cart__item-price-span">x</span>
+                                    $250</p>
+                            </div>
+                            <span class="drop-cart__item-del"><i class="fa fa-times-circle"
+                                                                 aria-hidden="true"></i></span>
+                        </div>
+                        <div class="drop-cart__item">
+                            <a href="single-product.html" class="drop-cart__item-image"><img src="img/cart-item2.jpg"
+                                                                                             alt="cart-item1"></a>
+                            <div class="drop-cart__item-description">
+                                <h3 class="drop-cart__item-title">rebox zane</h3>
+                                <p class="drop-cart__item-star"><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                                                     aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o"
+                                                                                     aria-hidden="true"></i></p>
+                                <p class="drop-cart__item-price">1 <span class="drop-cart__item-price-span">x</span>
+                                    $250</p>
+                            </div>
+                            <span class="drop-cart__item-del"><i class="fa fa-times-circle"
+                                                                 aria-hidden="true"></i></span>
+                        </div>
+                        <div class="drop-cart__total">
+                            <p>TOTAL</p>
+                            <p>$500.00</p>
+                        </div>
+                        <a href="checkout.html" class="button-white drop-cart__button">Checkout</a>
+                        <a href="shoping-cart.html" class="button-black drop-cart__button">Go to cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="button-pink">My Account <i class="my-caret-down fa fa-caret-down" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="container">
+            <ul class="menu">
+                <li class="menu__item menu__item-active">
+                    <a href="index.html" class="menu__item-link">Home</a></li>
+                <li class="menu__item">
+                    <a href="product.html" class="menu__item-link">Man</a>
+                    <div class="drop drop-menu">
+                        <div class="drop-box-triangle triangle-menu"></div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Blazers</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Denim</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Leggings/Pants</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Skirts/Shorts</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                            </ul>
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                            <a href="product.html" class="drop-box-link promo-mini">
+                                <img src="img/promo-mini.jpg" alt="promo-mini">
+                                <p class="promo-mini-text">Super sale!</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a href="product.html" class="menu__item-link">Women</a>
+                    <div class="drop drop-menu">
+                        <div class="drop-box-triangle triangle-menu"></div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Blazers</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Denim</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Leggings/Pants</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Skirts/Shorts</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                            </ul>
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                            <a href="product.html" class="drop-box-link promo-mini">
+                                <img src="img/promo-mini.jpg" alt="promo-mini">
+                                <p class="promo-mini-text">Super sale!</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a href="product.html" class="menu__item-link">Kids</a>
+                    <div class="drop drop-menu">
+                        <div class="drop-box-triangle triangle-menu"></div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Blazers</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Denim</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Leggings/Pants</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Skirts/Shorts</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                            </ul>
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                            <a href="product.html" class="drop-box-link promo-mini">
+                                <img src="img/promo-mini.jpg" alt="promo-mini">
+                                <p class="promo-mini-text">Super sale!</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a href="product.html" class="menu__item-link">Accoseriese</a>
+                    <div class="drop drop-menu drop-menu-last">
+                        <div class="drop-box-triangle triangle-menu triangle-menu-last"></div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Blazers</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Denim</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Leggings/Pants</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Skirts/Shorts</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                            </ul>
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                            <a href="product.html" class="drop-box-link promo-mini">
+                                <img src="img/promo-mini.jpg" alt="promo-mini">
+                                <p class="promo-mini-text">Super sale!</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a href="product.html" class="menu__item-link">Featured</a>
+                    <div class="drop drop-menu drop-menu-last">
+                        <div class="drop-box-triangle triangle-menu triangle-menu-last"></div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Blazers</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Denim</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Leggings/Pants</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Skirts/Shorts</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                            </ul>
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                            <a href="product.html" class="drop-box-link promo-mini">
+                                <img src="img/promo-mini.jpg" alt="promo-mini">
+                                <p class="promo-mini-text">Super sale!</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a href="product.html" class="menu__item-link">Hot Deals</a>
+                    <div class="drop drop-menu drop-menu-last">
+                        <div class="drop-box-triangle triangle-menu triangle-menu-last"></div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Blazers</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Denim</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Leggings/Pants</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Skirts/Shorts</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                            </ul>
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-box">
+                            <h3 class="drop-box-title">Women</h3>
+                            <ul class="drop-box-list">
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Dresses</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Tops</a></li>
+                                <li class="drop-box-item"><a href="product.html"
+                                                             class="drop-box-link">Sweaters/Knits</a></li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                                <li class="drop-box-item"><a href="product.html" class="drop-box-link">Jackets/Coats</a>
+                                </li>
+                            </ul>
+                            <a href="product.html" class="drop-box-link promo-mini">
+                                <img src="img/promo-mini.jpg" alt="promo-mini">
+                                <p class="promo-mini-text">Super sale!</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+<div class="container">
+    <div class="breadcrumb">
+        <div class="container breadcrumb-flex">
+            <h2 class="breadcrumb__page-name">New Arrivals</h2>
+            <nav>
+                <ul class="breadcrumb__nav">
+                    <li class="breadcrumb__nav-item"><a href="index.html" class="breadcrumb__nav-link">Home</a></li>
+                    <li class="breadcrumb__nav-item"><a href="product.html" class="breadcrumb__nav-link">Men</a></li>
+                    <li class="breadcrumb__nav-item"><a href="#" class="breadcrumb__nav-link breadcrumb__nav-active">New
+                        Arrivals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="container">
+            <div class="cart__grow">
+                <div class="cart__grow-box">
+                    <span class="cart__grow-col cart__grow-col-head">Product Details</span>
+                    <span class="cart__grow-col cart__grow-col-head">unite Price</span>
+                    <span class="cart__grow-col cart__grow-col-head">Quantity</span>
+                    <span class="cart__grow-col cart__grow-col-head">shipping</span>
+                    <span class="cart__grow-col cart__grow-col-head">Subtotal</span>
+                    <span class="cart__grow-col cart__grow-col-head">ACTION</span>
+                </div>
+                <div class="cart__grow-box">
+                    <div class="cart__grow-col cart__grow-col-first ">
+                        <img class="cart__grow-image" src="img/product-cart1.jpg" alt="product9">
+                        <div class="cart__grow-description">
+                            <a href="single-product.html" class="cart__grow-description-title">Mango People T-shirt</a>
+                            <div class="cart__grow-description-param">
+                                <p>Color: <span class="cart__grow-description-param-span">Red</span></p>
+                                <p>Size: <span class="cart__grow-description-param-span">Xll</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cart__grow-col">$150</p>
+                    <p class="cart__grow-col"><input class="cart__grow-col-number" type="number" min="1" max="10"></p>
+                    <p class="cart__grow-col">free</p>
+                    <p class="cart__grow-col">$300</p>
+                    <p class="cart__grow-col cart__grow-col-del"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <div class="cart__grow-box">
+                    <div class="cart__grow-col cart__grow-col-first ">
+                        <img class="cart__grow-image" src="img/product-cart2.jpg" alt="product9">
+                        <div class="cart__grow-description">
+                            <a href="single-product.html" class="cart__grow-description-title">Mango People T-shirt</a>
+                            <div class="cart__grow-description-param">
+                                <p>Color: <span class="cart__grow-description-param-span">Red</span></p>
+                                <p>Size: <span class="cart__grow-description-param-span">Xll</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cart__grow-col">$150</p>
+                    <p class="cart__grow-col"><input class="cart__grow-col-number" type="number" min="1" max="10"></p>
+                    <p class="cart__grow-col">free</p>
+                    <p class="cart__grow-col">$300</p>
+                    <p class="cart__grow-col cart__grow-col-del"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <div class="cart__grow-box">
+                    <div class="cart__grow-col cart__grow-col-first ">
+                        <img class="cart__grow-image" src="img/product-cart3.jpg" alt="product9">
+                        <div class="cart__grow-description">
+                            <a href="single-product.html" class="cart__grow-description-title">Mango People T-shirt</a>
+                            <div class="cart__grow-description-param">
+                                <p>Color: <span class="cart__grow-description-param-span">Red</span></p>
+                                <p>Size: <span class="cart__grow-description-param-span">Xll</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cart__grow-col">$150</p>
+                    <p class="cart__grow-col"><input class="cart__grow-col-number" type="number" min="1" max="10"></p>
+                    <p class="cart__grow-col">free</p>
+                    <p class="cart__grow-col">$300</p>
+                    <p class="cart__grow-col cart__grow-col-del"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="cart__buttons">
+                <a href="#" class="button-black"> cLEAR SHOPPING CART</a>
+                <a href="#" class="button-black"> cONTINUE sHOPPING</a>
+            </div>
+            <form action="#" class="cart__form">
+                <fieldset class="cart__form-col">
+                    <legend class="cart__form-legend">Shipping Adress</legend>
+                    <select name="country" id="country" class="cart__form-input">
+                        <option value="bangladesh">bangladesh</option>
+                        <option value="bangladesh">bangladesh</option>
+                        <option value="bangladesh">bangladesh</option>
+                        <option value="bangladesh">bangladesh</option>
+                    </select>
+                    <input type="text" placeholder="State" class="cart__form-input">
+                    <input type="text" placeholder="Postcode / Zip" class="cart__form-input">
+                    <div class="button-black cart__form-button">get a quote</div>
+                </fieldset>
+                <fieldset class="cart__form-col">
+                    <legend class="cart__form-legend">coupon discount</legend>
+                    <p class="cart__form-descr">
+                        Enter your coupon code if you have one
+                    </p>
+                    <input type="text" placeholder="State" class="cart__form-input">
+                    <a class="button-black cart__form-button">Apply coupon</a>
+                </fieldset>
+                <fieldset class="cart__form-col">
+                    <div class="cart__total">
+                        <p class="cart__form-subtotal">Sub total <span class="cart__form-subtotal-span">$900</span></p>
+                        <p class="cart__form-grandtotal">GRAND TOTAL <span
+                                class="cart__form-grandtotal-span pink">$900</span></p>
+                        <div class="button-pink cart__form-button-pink">proceed to checkout</div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="feedback">
+        <section class="container feedback-flex">
+            <div class="feedback-box feedback-slider">
+                <div class="feedback-slider__content">
+                    <img class="feedback-slider__image" src="img/photo-coment.jpg" alt="photo-coment">
+                    <div class="feedback-slider__text">
+                        <p class="feedback-slider__text-main">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="feedback-slider__text-name-top pink">Bin Burhan</p>
+                        <p class="feedback-slider__text-name-bottom">Dhaka, Bd</p>
+                    </div>
+                </div>
+                <div class="feedback-slider__nav">
+                    <div class="feedback-slider__nav-item"></div>
+                    <div class="feedback-slider__nav-item nav-active"></div>
+                    <div class="feedback-slider__nav-item"></div>
+                </div>
+            </div>
+            <div class="feedback-box subscribe">
+                <div class="subscribe-text">
+                    <p class="subscribe-text-top">Subscribe</p>
+                    <p class="subscribe-text-bottom">FOR OUR NEWLETTER AND PROMOTION</p>
+                </div>
+                <form class="subscribe-form" action="#">
+                    <input class="subscribe-input" type="email" placeholder="Enter Your Email">
+                    <div class="button-pink subscribe-button">Subscribe</div>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <div class="container footer-nav">
+        <div class="footer-nav-content">
+            <a class="logo footer-logo" href="index.html"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span
+                    class="logo-d pink">D</span></a>
+            <p class="footer-nav-text">Objectively transition extensive data rather than cross functional solutions.
+                Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+            <p class="footer-nav-text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        </div>
+        <div class="footer-menu-box">
+            <p class="footer-menu-title pink">COMPANY</p>
+            <ul class="footer-menu">
+                <li class="footer-menu-item"><a href="index.html" class="footer-menu-item-link">Home</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Shop</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">About</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">How It Works</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu-box">
+            <p class="footer-menu-title pink">INFORMATION</p>
+            <ul class="footer-menu">
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Tearms & Condition</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Privacy Policy</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">How to Buy</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">How to Sell</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Promotion</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu-box">
+            <p class="footer-menu-title pink">SHOP CATEGORY</p>
+            <ul class="footer-menu">
+                <li class="footer-menu-item"><a href="product.html" class="footer-menu-item-link">Men</a></li>
+                <li class="footer-menu-item"><a href="product.html" class="footer-menu-item-link">Women</a></li>
+                <li class="footer-menu-item"><a href="product.html" class="footer-menu-item-link">Child</a></li>
+                <li class="footer-menu-item"><a href="product.html" class="footer-menu-item-link">Apparel</a></li>
+                <li class="footer-menu-item"><a href="product.html" class="footer-menu-item-link">Brows All</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-last">
+        <div class="container footer-last-flex">
+            <div class="copyright">
+                <p class="copyright-text">© 2017 Brand All Rights Reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com"><i class="social-item fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com"><i class="social-item fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.cn/uas/login"><i class="social-item fa fa-linkedin"
+                                                               aria-hidden="true"></i></a>
+                <a href="https://www.pinterest.ru"><i class="social-item fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href="https://www.google.ru"><i class="social-item fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+</body>
+</html>
