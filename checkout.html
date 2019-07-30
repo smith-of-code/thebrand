@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="app">
 <header class="header">
     <div class="container header__flex">
         <div class="header__left">
@@ -44,52 +45,7 @@
             </form>
         </div>
         <div class="header__right">
-            <div class="header__right-cart"><a href="shoping-cart.html"><img src="img/cart.svg" alt="cart"></a>
-                <div class="ellipse-cart">10</div>
-                <div class="drop drop-cart">
-                    <div class="drop-box-triangle triangle-cart"></div>
-                    <div class="drop-box">
-                        <div class="drop-cart__item">
-                            <a href="single-product.html" class="drop-cart__item-image"><img src="img/cart-item1.jpg"
-                                                                                             alt="cart-item1"></a>
-                            <div class="drop-cart__item-description">
-                                <h3 class="drop-cart__item-title">rebox zane</h3>
-                                <p class="drop-cart__item-star"><i class="fa fa-star" aria-hidden="true"></i><i
-                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                                                                     aria-hidden="true"></i><i
-                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o"
-                                                                                     aria-hidden="true"></i></p>
-                                <p class="drop-cart__item-price">1 <span class="drop-cart__item-price-span">x</span>
-                                    $250</p>
-                            </div>
-                            <span class="drop-cart__item-del"><i class="fa fa-times-circle"
-                                                                 aria-hidden="true"></i></span>
-                        </div>
-                        <div class="drop-cart__item">
-                            <a href="single-product.html" class="drop-cart__item-image"><img src="img/cart-item2.jpg"
-                                                                                             alt="cart-item1"></a>
-                            <div class="drop-cart__item-description">
-                                <h3 class="drop-cart__item-title">rebox zane</h3>
-                                <p class="drop-cart__item-star"><i class="fa fa-star" aria-hidden="true"></i><i
-                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                                                                     aria-hidden="true"></i><i
-                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o"
-                                                                                     aria-hidden="true"></i></p>
-                                <p class="drop-cart__item-price">1 <span class="drop-cart__item-price-span">x</span>
-                                    $250</p>
-                            </div>
-                            <span class="drop-cart__item-del"><i class="fa fa-times-circle"
-                                                                 aria-hidden="true"></i></span>
-                        </div>
-                        <div class="drop-cart__total">
-                            <p>TOTAL</p>
-                            <p>$500.00</p>
-                        </div>
-                        <a href="checkout.html" class="button drop-cart_button">Checkout</a>
-                        <a href="shoping-cart.html" class="button drop-cart_button">Go to cart</a>
-                    </div>
-                </div>
-            </div>
+            <cart ref="cart" drop-cart="true"></cart>
 
 
             <a href="checkout.html" class="button">My Account <i class="my-caret-down fa fa-caret-down" aria-hidden="true"></i></a>
@@ -897,5 +853,10 @@
 
 
 </footer>
+</div>
+<script src="js/vue.js"></script>
+<script src="js/CartComp.js"></script>
+<script src="js/ProductComp.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

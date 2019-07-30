@@ -1,0 +1,182 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "tropic t-shirt",
+    "price": 30,
+    "rating": 4,
+    "section": "whomen" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product2.jpg"
+  },
+  {
+    "id_product": 2,
+    "product_name": "mango t-shirt",
+    "price": 70,
+    "rating": 5,
+    "section": "whomen" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product4.jpg"
+  },
+  {
+    "id_product": 3,
+    "product_name": "bingo-bongo",
+    "price": 1000,
+    "rating": 3,
+    "section": "whomen" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product5.jpg"
+  },
+  {
+    "id_product": 4,
+    "product_name": "costume girl",
+    "price": 30,
+    "rating": 2,
+    "section": "whomen" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product15.jpg"
+  },
+  {
+    "id_product": 5,
+    "product_name": "pink banch",
+    "price": 54,
+    "rating": 0,
+    "section": "whomen" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product16.jpg"
+  },
+  {
+    "id_product": 6,
+    "product_name": "banana",
+    "price": 150,
+    "rating": 5,
+    "section": "whomen" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product17.jpg"
+  },
+  {
+    "id_product": 7,
+    "product_name": "pijami",
+    "price": 300,
+    "rating": 3,
+    "section": "whomen" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product18.jpg"
+  },
+  {
+    "id_product": 8,
+    "product_name": "raki maki",
+    "price": 666,
+    "rating": 2,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product1.jpg"
+  },
+  {
+    "id_product": 9,
+    "product_name": "pimpo gool",
+    "price": 47,
+    "rating": 4,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product3.jpg"
+  },
+  {
+    "id_product": 10,
+    "product_name": "blomberg",
+    "price": 5,
+    "rating": 1,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product6.jpg"
+  },
+  {
+    "id_product": 11,
+    "product_name": "shazam nace",
+    "price": 20,
+    "rating": 5,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product7.jpg"
+  },
+  {
+    "id_product": 12,
+    "product_name": "kukla voodoo",
+    "price": 86,
+    "rating": 3,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product8.jpg"
+  },
+  {
+    "id_product": 13,
+    "product_name": "bigimot",
+    "price": 70,
+    "rating": 4,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product9.jpg"
+  },
+  {
+    "id_product": 14,
+    "product_name": "simba nala",
+    "price": 46,
+    "rating": 5,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product10.jpg"
+  },
+  {
+    "id_product": 15,
+    "product_name": "mufasa",
+    "price": 82,
+    "rating": 3,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product11.jpg"
+  },
+  {
+    "id_product": 16,
+    "product_name": "giena shram",
+    "price": 34,
+    "rating": 5,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product12.jpg"
+  },
+  {
+    "id_product": 17,
+    "product_name": "bolshoy pacan",
+    "price": 63,
+    "rating": 4,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product13.jpg"
+  },
+  {
+    "id_product": 18,
+    "product_name": "grustnoe solo",
+    "price": 82,
+    "rating": 5,
+    "section": "man" ,
+    "color": ["red", "black", "blue"],
+    "size": ["L","M","XL","XXL"],
+    "image": "img/product14.jpg"
+  }
+]
