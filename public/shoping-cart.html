@@ -45,7 +45,7 @@
             </form>
         </div>
         <div class="header__right">
-            <cart ref="cart" drop-cart="true"></cart>
+            <cart ref="drop-cart" drop-cart="true"></cart>
 
 
             <a href="checkout.html" class="button">My Account <i class="my-caret-down fa fa-caret-down" aria-hidden="true"></i></a>
@@ -435,7 +435,7 @@
             </nav>
         </div>
     </div>
-    <cart ref="cart" ></cart>
+    <cart ref="cart-page"></cart>
 
 </div>
 <footer class="footer">
@@ -532,6 +532,7 @@
 </footer>
 </div>
 <script src="js/vue.js"></script>
+<script src="https://unpkg.com/vuex"></script>
 <script src="js/CartComp.js"></script>
 <script src="js/ProductComp.js"></script>
 <script src="js/main.js"></script>

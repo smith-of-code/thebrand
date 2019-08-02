@@ -1,18 +1,18 @@
+
 Vue.component('cart', {
     props:['dropCart'],
     data(){
         return {
-            cartUrl: '/getCart.json',
-            cart: {
+            cart:{
                 "amount": 0,
                 "countGoods": 0,
-                "contents":[]
-            },
+                "contents": []
+            }
         }
     },
     computed:{
       countGoods(){
-          this.cart.countGoods =  this.cart.contents.reduce((sum,carrent) => {return sum+carrent.quantity} , 0 );
+          this.cart.countGoods =  this.cart.contents.reduce((sum,carrent) => {return sum + +carrent.quantity} , 0 );
           return this.cart.countGoods;
       },
         amount(){
@@ -22,43 +22,45 @@ Vue.component('cart', {
     },
     methods: {
         addProduct(product){
-            this.$parent.getJson(`${API}/addToCart.json`)
-                .then(data => {
-                    if(data.result === 1){
-                        let find = this.cart.contents.find(el => el.id_product === product.id_product);
-                        if(find){
+            const find = this.cart.contents.find(el => el.id_product === product.id_product);
+
+            if (find) {
+                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1})
+                    .then(data => {
+                        if (data.result === 1) {
                             find.quantity++;
-                        } else {
-                            let prod = Object.assign({quantity: 1}, product);
-                            this.cart.contents.push(prod)
                         }
-                    } else {
-                        alert('Error');
-                    }
-                })
+                    });
+            } else {
+                const prod = Object.assign({quantity: 1}, product);
+                this.$parent.postJson('/api/cart', prod)
+                    .then(data => {
+                        if (data.result === 1) {
+                            this.cart.contents.push(prod);
+                        }
+                    });
+            }
         },
         remove(item) {
-            this.$parent.getJson(`${API}/deleteFromCart.json`)
-                .then(data => {
-                    if(data.result === 1) {
-                        if(item.quantity>1){
-                            item.quantity--;
-                        } else {
-                            this.cart.contents.splice(this.cart.contents.indexOf(item), 1)
+            const find = this.cart.contents.find(el => el.id_product === item.id_product);
+            if (find){
+                this.$parent.dltJson(`/api/cart/${find.id_product}`, {quantity: 1})
+                    .then(data => {
+                        if(data.result === 1) {
+                            if(find.quantity > 1){
+                                find.quantity--;
+                            } else {
+                                this.cart.contents.splice(this.cart.contents.indexOf(find), 1)
+                            }
                         }
-                    }
-                })
+                    })
+            }
         },
     },
     mounted(){
-        this.$parent.getJson(`${API + this.cartUrl}`)
-            .then(data => {
-                this.cart.amount = data.amount;
-                this.cart.countGoods = data.countGoods;
-                for(let el of data.contents){
-                    this.cart.contents.push(el);
-                }
-            });
+        this.cart.contents = this.$root.$store.state.cart.contents;
+        this.cart.countGoods = this.$root.$store.state.cart.countGoods;
+        this.cart.amount = this.$root.$store.state.cart.amount;
     },
     template: `
                 <div class="header__right-cart" v-if="dropCart"><a href="shoping-cart.html"><img src="img/cart.svg" alt="cart"></a>
