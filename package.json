@@ -1,0 +1,32 @@
+{
+  "name": "thebrand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "moment": "^2.24.0",
+    "nodemon": "^1.19.4",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smith-of-code/thebrand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smith-of-code/thebrand/issues"
+  },
+  "homepage": "https://github.com/smith-of-code/thebrand#readme"
+}

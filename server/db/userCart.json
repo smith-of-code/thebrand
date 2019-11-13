@@ -1,0 +1,66 @@
+{
+    "amount": 4280,
+    "countGoods": 12,
+    "contents": [
+        {
+            "quantity": 7,
+            "id_product": 4,
+            "product_name": "costume girl",
+            "price": 30,
+            "rating": 2,
+            "section": "whomen",
+            "color": [
+                "red",
+                "black",
+                "blue"
+            ],
+            "size": [
+                "L",
+                "M",
+                "XL",
+                "XXL"
+            ],
+            "image": "img/product15.jpg"
+        },
+        {
+            "quantity": 4,
+            "id_product": 3,
+            "product_name": "bingo-bongo",
+            "price": 1000,
+            "rating": 3,
+            "section": "whomen",
+            "color": [
+                "red",
+                "black",
+                "blue"
+            ],
+            "size": [
+                "L",
+                "M",
+                "XL",
+                "XXL"
+            ],
+            "image": "img/product5.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 2,
+            "product_name": "mango t-shirt",
+            "price": 70,
+            "rating": 5,
+            "section": "whomen",
+            "color": [
+                "red",
+                "black",
+                "blue"
+            ],
+            "size": [
+                "L",
+                "M",
+                "XL",
+                "XXL"
+            ],
+            "image": "img/product4.jpg"
+        }
+    ]
+}

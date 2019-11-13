@@ -2,7 +2,6 @@ Vue.component('products', {
     props:['count'],
     data(){
         return {
-            catalogUrl: '/catalogData.json',
             products: [],
             filtered: [],
 
@@ -16,10 +15,10 @@ Vue.component('products', {
                 return this.products.length
             }
 
-        }
+        },
     },
     mounted(){
-        this.$parent.getJson(`${API + this.catalogUrl}`)
+        this.$store.dispatch('getJson','/api/catalog')
             .then(data => {
                 for(let el of data){
                     this.products.push(el);
@@ -30,7 +29,7 @@ Vue.component('products', {
     },
     template: `
         <div class="product-flex">
-            <product v-for="item of filtered" v-if="filtered.indexOf(item) < countRender()" :key="item.id_product" :product="item"></product>
+            <product v-for="item of filtered" v-if="filtered.indexOf(item) < countRender()" :key="item.id_product" :product="item" ></product>
         </div>
     `
 });
