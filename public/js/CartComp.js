@@ -11,24 +11,25 @@ Vue.component('cart', {
         }
     },
     computed:{
-      countGoods(){
-          this.cart.countGoods =  this.cart.contents.reduce((sum,carrent) => {return sum + +carrent.quantity} , 0 );
-          return this.cart.countGoods;
-      },
         amount(){
-            this.cart.amount =  this.cart.contents.reduce((sum,carrent) => {return sum+carrent.price*carrent.quantity} , 0 );
-            return this.cart.amount;
+            return this.$store.getters.amount;
+        },
+        countGoods(){
+            return this.$store.getters.countGoods;
+        },
+        contents(){
+            return this.$store.getters.contents;
         }
     },
     methods: {
         addProduct(product){
-            const find = this.cart.contents.find(el => el.id_product === product.id_product);
+            const find = this.$store.getters.contents.find(el => el.id_product === product.id_product);
 
             if (find) {
                 this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1})
                     .then(data => {
                         if (data.result === 1) {
-                            find.quantity++;
+                            this.$store.dispatch('cartInit', '/api/cart');
                         }
                     });
             } else {
@@ -36,31 +37,42 @@ Vue.component('cart', {
                 this.$parent.postJson('/api/cart', prod)
                     .then(data => {
                         if (data.result === 1) {
-                            this.cart.contents.push(prod);
+                            this.$store.dispatch('cartInit', '/api/cart');
                         }
                     });
             }
         },
-        remove(item) {
-            const find = this.cart.contents.find(el => el.id_product === item.id_product);
+        remove(item, quantity = 1) {
+            const find = this.$store.getters.contents.find(el => el.id_product === item.id_product);
             if (find){
-                this.$parent.dltJson(`/api/cart/${find.id_product}`, {quantity: 1})
+                this.$parent.dltJson(`/api/cart/${find.id_product}`, {quantity: quantity})
                     .then(data => {
                         if(data.result === 1) {
-                            if(find.quantity > 1){
-                                find.quantity--;
-                            } else {
-                                this.cart.contents.splice(this.cart.contents.indexOf(find), 1)
-                            }
+                            this.$store.dispatch('cartInit', '/api/cart');
                         }
                     })
             }
         },
-    },
-    mounted(){
-        this.cart.contents = this.$root.$store.state.cart.contents;
-        this.cart.countGoods = this.$root.$store.state.cart.countGoods;
-        this.cart.amount = this.$root.$store.state.cart.amount;
+        changeQuantity(item) {
+            const find = this.$store.getters.contents.find(el => el.id_product === item.id_product);
+            if (+item.quantity === 1){
+                this.$parent.dltJson(`/api/cart/${find.id_product}`, {quantity: 1})
+                    .then(data => {
+                        if(data.result === 1) {
+                            this.$store.dispatch('cartInit', '/api/cart');
+                        }
+                    })
+            } else {
+                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: +item.quantity})
+                    .then(data => {
+                        if (data.result === 1) {
+                            this.$store.dispatch('cartInit', '/api/cart');
+                        }
+                    });
+            }
+
+
+        }
     },
     template: `
                 <div class="header__right-cart" v-if="dropCart"><a href="shoping-cart.html"><img src="img/cart.svg" alt="cart"></a>
@@ -70,19 +82,19 @@ Vue.component('cart', {
                         <div class="drop-box">
                         <p class="drop-box_empty" v-if="!cart.contents.length">Cart is empty</p>
                         <drop-cart-item class="cart-item"
-                        v-for="item of cart.contents"
+                        v-for="item of contents"
                         :key="item.id_product"
                         :cart-item="item"
                         @remove="remove">
                         </drop-cart-item>
 
 
-                            <div class="drop-cart__total" v-if="cart.contents.length">
+                            <div class="drop-cart__total" v-if="contents.length">
                                 <p>TOTAL</p>
                                 <p>$ {{amount.toFixed(2)}}</p>
                             </div>
-                            <a href="checkout.html" class="button drop-cart_button" v-if="cart.contents.length">Checkout</a>
-                            <a href="shoping-cart.html" class="button drop-cart_button" v-if="cart.contents.length">Go to cart</a>
+                            <a href="checkout.html" class="button drop-cart_button" v-if="contents.length">Checkout</a>
+                            <a href="shoping-cart.html" class="button drop-cart_button" v-if="contents.length">Go to cart</a>
                         </div>
                     </div>
                 </div>
@@ -98,10 +110,11 @@ Vue.component('cart', {
     <span class="cart__grow-col cart__grow-col-head">ACTION</span>
     </div>
     <cart-item class="cart-item"
-                        v-for="item of cart.contents"
+                        v-for="item of contents"
                         :key="item.id_product"
                         :cart-item="item"
-                        @remove="remove">
+                        @remove="remove"
+                        @changeQuantity="changeQuantity">
                         </cart-item>
 
             </div>
@@ -186,10 +199,10 @@ Vue.component('cart-item', {
                                 </div>
                                 </div>
                                 <p class="cart__grow-col">{{cartItem.price}}</p>
-                                <p class="cart__grow-col"><input class="cart__grow-col-number" type="number" min="1" max="10" v-model="cartItem.quantity"></p>
+                                <p class="cart__grow-col"><input class="cart__grow-col-number" type="number" min="1" max="10" @change="$emit('changeQuantity',cartItem)" v-model="cartItem.quantity" ></p>
                                 <p class="cart__grow-col">free</p>
                                 <p class="cart__grow-col">{{cartItem.quantity*cartItem.price}}</p>
-                                <p class="cart__grow-col cart__grow-col-del" @click="$emit('remove', cartItem)"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                <p class="cart__grow-col cart__grow-col-del" @click="$emit('remove', cartItem, 'all')"><i class="fa fa-times-circle" aria-hidden="true"></i>
                                 </p>
                             </div>
     `

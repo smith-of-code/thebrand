@@ -10,38 +10,56 @@ const store = new Vuex.Store({
         cartLoad(state, data){
             state.cart.amount = data.amount;
             state.cart.countGoods = data.countGoods;
-            for (el of data.contents){
-                state.cart.contents.push(el)
-            }
-
-
+            state.cart.contents = data.contents;
+        },
+        quantityChange(state, num){
+            console.log(num);
         }
+
+
     },
-    // getters:{
-    //     givAmount: state => {
-    //         return cart.amount
-    //     },
-    //     givCountGoods: state => {
-    //         return cart.countGoods
-    //     },
-    //     givContents: state => {
-    //         return cart.contents
-    //     }
-    // }
+    actions:{
+        cartInit(state, url){
+            this.dispatch('getJson', '/api/cart')
+                .then(data =>{
+                    this.commit('cartLoad', data)
+                })
+        },
+        getJson(state, url){
+            return fetch(url)
+                .then(result => result.json())
+                .catch(error => {
+                    console.log(error)
+                })
+        },
+
+    },
+    getters:{
+        amount: state => {
+            return state.cart.amount
+        },
+        countGoods: state => {
+            return state.cart.countGoods
+        },
+        contents: state => {
+            return state.cart.contents
+        }
+    }
 
 });
 const app = new Vue ({
     el: '#app',
    store,
     methods: {
-
         getJson(url){
+            console.log(url);
             return fetch(url)
                 .then(result => result.json())
                 .catch(error => {
-                    this.$refs.error.setError(error);
+                    console.log(error)
                 })
         },
+
         postJson(url, data) {
             return fetch(url, {
                 method: 'POST',
@@ -80,10 +98,6 @@ const app = new Vue ({
         },
     },
     mounted() {
-        console.log(this);
-        this.getJson('/api/cart')
-            .then(data => {
-                   store.commit('cartLoad', data);
-            });
+                   store.dispatch('cartInit', '/api/cart');
     }
 });

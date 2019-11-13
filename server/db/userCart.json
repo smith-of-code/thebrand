@@ -1,9 +1,9 @@
 {
-    "amount": 30,
-    "countGoods": 1,
+    "amount": 4280,
+    "countGoods": 12,
     "contents": [
         {
-            "quantity": 3,
+            "quantity": 7,
             "id_product": 4,
             "product_name": "costume girl",
             "price": 30,
@@ -23,7 +23,7 @@
             "image": "img/product15.jpg"
         },
         {
-            "quantity": 3,
+            "quantity": 4,
             "id_product": 3,
             "product_name": "bingo-bongo",
             "price": 1000,
@@ -44,11 +44,11 @@
         },
         {
             "quantity": 1,
-            "id_product": 8,
-            "product_name": "raki maki",
-            "price": 666,
-            "rating": 2,
-            "section": "man",
+            "id_product": 2,
+            "product_name": "mango t-shirt",
+            "price": 70,
+            "rating": 5,
+            "section": "whomen",
             "color": [
                 "red",
                 "black",
@@ -60,7 +60,7 @@
                 "XL",
                 "XXL"
             ],
-            "image": "img/product1.jpg"
+            "image": "img/product4.jpg"
         }
     ]
 }
